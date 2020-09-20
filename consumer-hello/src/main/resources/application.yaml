@@ -1,0 +1,18 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: consumer-hello
+
+info:
+  app:
+    name: consumer-hello111
+
+eureka:
+  instance:
+    hostname: jie.com
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:7001/eureka/

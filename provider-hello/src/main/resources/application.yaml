@@ -1,0 +1,21 @@
+server:
+  port: 8001
+
+info:
+  app:
+    name: provider-hello111
+
+spring:
+  application:
+    name: provider-hello
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+
+eureka:
+  instance:
+    hostname: jie.com
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:7001/eureka/
+
