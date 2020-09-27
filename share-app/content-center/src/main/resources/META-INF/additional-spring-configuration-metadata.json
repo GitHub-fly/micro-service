@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "management.endpoints.web.exposure.include",
+      "type": "java.lang.String",
+      "description": "Description for management.endpoints.web.exposure.include."
+    },
+    {
+      "name": "user-center.ribbon",
+      "type": "java.lang.String",
+      "description": "Description for user-center.ribbon."
+    }
+  ] }

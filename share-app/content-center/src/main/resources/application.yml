@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: content-center
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+#        namespace: 917f93f6-2850-41ab-8496-2e8285f037ad
+
+server:
+  port: 8881
+
+info:
+  app:
+    name: content-center
+    version: 1.0.0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+
+user-center:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+#ribbon:
+#  eager-load:
+#    clients: user-center
+#    enabled: true
+
+
+
