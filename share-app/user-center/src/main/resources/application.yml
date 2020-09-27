@@ -8,10 +8,10 @@ spring:
         metadata:     # 配置 Nacos 元数据
           instance: cc
           version: 1.0
-#        namespace: 917f93f6-2850-41ab-8496-2e8285f037ad
+        namespace: 917f93f6-2850-41ab-8496-2e8285f037ad
 
 server:
-  port: 6003
+  port: 6001
 
 info:
   app:
