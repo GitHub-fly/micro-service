@@ -5,7 +5,7 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
-        namespace: 917f93f6-2850-41ab-8496-2e8285f037ad
+#        namespace: 917f93f6-2850-41ab-8496-2e8285f037ad
 
 server:
   port: 8881
