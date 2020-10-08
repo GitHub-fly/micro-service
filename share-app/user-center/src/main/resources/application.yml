@@ -4,14 +4,29 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8848
-        metadata:     # 配置 Nacos 元数据
+        server-addr: 123.56.91.23:8848
+        #        server-addr: localhost:8848
+        metadata: # 配置 Nacos 元数据
           instance: cc
           version: 1.0
-#        namespace: 917f93f6-2850-41ab-8496-2e8285f037ad
+  #        namespace: 917f93f6-2850-41ab-8496-2e8285f037ad
+
+  datasource:
+    url: jdbc:mysql://123.56.91.23:3306/user_center?useUnide=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: rootroot
+    hikari:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      maxLifetime: 30000
+      minimum-idle: 1
+      maximum-pool-size: 20
+      auto-commit: true
+      idle-timeout: 10000
+      connection-timeout: 30000
+    type: com.zaxxer.hikari.HikariDataSource
 
 server:
-  port: 6002
+  port: 7001
 
 info:
   app:
@@ -29,5 +44,11 @@ management:
     shutdown:
       enabled: true
 
+
+rocketmq:
+  name-server: 123.56.91.23:9876
+  producer:
+    # 必须指定group
+    group: test-group
 
 

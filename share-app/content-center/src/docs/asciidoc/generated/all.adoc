@@ -1,0 +1,1816 @@
+= Api Documentation
+
+
+[[_overview]]
+== Overview
+Api Documentation
+
+
+=== Version information
+[%hardbreaks]
+__Version__ : 1.0
+
+
+=== License information
+[%hardbreaks]
+__License__ : Apache 2.0
+__License URL__ : http://www.apache.org/licenses/LICENSE-2.0
+__Terms of service__ : urn:tos
+
+
+=== URI scheme
+[%hardbreaks]
+__Host__ : localhost:8881
+__BasePath__ : /
+
+
+=== Tags
+
+* basic-error-controller : Basic Error Controller
+* operation-handler : Operation Handler
+* web-mvc-links-handler : Web Mvc Links Handler
+* 公告接口 : Notice Controller
+* 分享接口 : Share Controller
+* 测试接口 : Test Controller
+
+
+
+
+[[_paths]]
+== Resources
+
+[[_basic-error-controller_resource]]
+=== Basic-error-controller
+Basic Error Controller
+
+
+[[_errorusingpost]]
+==== error
+....
+POST /error
+....
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|< string, object > map
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Consumes
+
+* `application/json`
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_errorusingget]]
+==== error
+....
+GET /error
+....
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|< string, object > map
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_errorusingput]]
+==== error
+....
+PUT /error
+....
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|< string, object > map
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Consumes
+
+* `application/json`
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_errorusingdelete]]
+==== error
+....
+DELETE /error
+....
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|< string, object > map
+|**204**|No Content|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|===
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_errorusingpatch]]
+==== error
+....
+PATCH /error
+....
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|< string, object > map
+|**204**|No Content|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|===
+
+
+===== Consumes
+
+* `application/json`
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_errorusinghead]]
+==== error
+....
+HEAD /error
+....
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|< string, object > map
+|**204**|No Content|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|===
+
+
+===== Consumes
+
+* `application/json`
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_errorusingoptions]]
+==== error
+....
+OPTIONS /error
+....
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|< string, object > map
+|**204**|No Content|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|===
+
+
+===== Consumes
+
+* `application/json`
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_operation-handler_resource]]
+=== Operation-handler
+Operation Handler
+
+
+[[_handleusingget]]
+==== handle
+....
+GET /actuator/archaius
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_1]]
+==== handle
+....
+GET /actuator/beans
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_3]]
+==== handle
+....
+GET /actuator/caches
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingdelete_1]]
+==== handle
+....
+DELETE /actuator/caches
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**204**|No Content|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|===
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_handleusingget_2]]
+==== handle
+....
+GET /actuator/caches/{cache}
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingdelete]]
+==== handle
+....
+DELETE /actuator/caches/{cache}
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**204**|No Content|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_4]]
+==== handle
+....
+GET /actuator/conditions
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_5]]
+==== handle
+....
+GET /actuator/configprops
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_7]]
+==== handle
+....
+GET /actuator/env
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_6]]
+==== handle
+....
+GET /actuator/env/{toMatch}
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_8]]
+==== handle
+....
+GET /actuator/features
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_10]]
+==== handle
+....
+GET /actuator/health
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_9]]
+==== handle
+....
+GET /actuator/health/**
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_11]]
+==== handle
+....
+GET /actuator/heapdump
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/octet-stream`
+
+
+[[_handleusingget_12]]
+==== handle
+....
+GET /actuator/info
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_14]]
+==== handle
+....
+GET /actuator/loggers
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingpost]]
+==== handle
+....
+POST /actuator/loggers/{name}
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Consumes
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_handleusingget_13]]
+==== handle
+....
+GET /actuator/loggers/{name}
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_15]]
+==== handle
+....
+GET /actuator/mappings
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_17]]
+==== handle
+....
+GET /actuator/metrics
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_16]]
+==== handle
+....
+GET /actuator/metrics/{requiredMetricName}
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_18]]
+==== handle
+....
+GET /actuator/nacos-discovery
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingpost_1]]
+==== handle
+....
+POST /actuator/refresh
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Consumes
+
+* `application/json`
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_19]]
+==== handle
+....
+GET /actuator/scheduledtasks
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingpost_2]]
+==== handle
+....
+POST /actuator/service-registry
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Consumes
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_20]]
+==== handle
+....
+GET /actuator/service-registry
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingpost_3]]
+==== handle
+....
+POST /actuator/shutdown
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Consumes
+
+* `application/json`
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_handleusingget_21]]
+==== handle
+....
+GET /actuator/threaddump
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**body** +
+__optional__|body|< string, string > map
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|object
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `text/plain;charset=UTF-8`
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_web-mvc-links-handler_resource]]
+=== Web-mvc-links-handler
+Web Mvc Links Handler
+
+
+[[_linksusingget]]
+==== links
+....
+GET /actuator
+....
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|< string, < string, <<_link,Link>> > map > map
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `application/vnd.spring-boot.actuator.v3+json`
+* `application/json`
+* `application/vnd.spring-boot.actuator.v2+json`
+
+
+[[_917a6a0ad3b9cec276900e3a86586a07]]
+=== 公告接口
+Notice Controller
+
+
+[[_gettopnoticeusingget]]
+==== 查询最新一条公告
+....
+GET /notice/one
+....
+
+
+===== Description
+查询最新一条公告
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_fa86f1a57d6f758a93cb33b59c015654,公告>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_3ecef281a805f36ea4142625eefacc12]]
+=== 分享接口
+Share Controller
+
+
+[[_getalldatausingpost]]
+==== getAllData
+....
+POST /share/all
+....
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_responseresult,ResponseResult>>
+|**201**|Created|No Content
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Consumes
+
+* `application/json`
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_findbyidusingget]]
+==== findById
+....
+GET /share/{id}
+....
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^9,.^4"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**id** +
+__required__|id|integer (int32)
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_b3aa729e321b5a0a8db2802fb0f94751,分享详情，带发布人昵称>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_cba1afa8756152014d0034b3b9dc688b]]
+=== 测试接口
+Test Controller
+
+
+[[_callusercenterusingget]]
+==== 调用不同实例的方法
+....
+GET /test/call/hello
+....
+
+
+===== Description
+调用不同实例的方法
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|string
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_callusingget]]
+==== 通过ribbon来调用方法
+....
+GET /test/call/ribbon
+....
+
+
+===== Description
+通过ribbon来调用方法
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|string
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_getinstancesusingget]]
+==== 获取所有实例
+....
+GET /test/data
+....
+
+
+===== Description
+得到所有的实例
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|< <<_serviceinstance,ServiceInstance>> > array
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_githubusingget]]
+==== 通过feign来调用未注册的服务
+....
+GET /test/github
+....
+
+
+===== Description
+通过feign来调用未注册的服务
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|string
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `*/*`
+
+
+[[_getuserusingget]]
+==== 通过feign来调用方法
+....
+GET /test/test-q
+....
+
+
+===== Description
+通过feign来调用方法
+
+
+===== Parameters
+
+[options="header", cols=".^2,.^3,.^4"]
+|===
+|Type|Name|Schema
+|**Query**|**avatarUrl** +
+__optional__|string
+|**Query**|**bonus** +
+__optional__|integer (int32)
+|**Query**|**createTime** +
+__optional__|string (date-time)
+|**Query**|**id** +
+__optional__|integer (int32)
+|**Query**|**roles** +
+__optional__|string
+|**Query**|**updateTime** +
+__optional__|string (date-time)
+|**Query**|**wxId** +
+__optional__|string
+|**Query**|**wxNickname** +
+__optional__|string
+|===
+
+
+===== Responses
+
+[options="header", cols=".^2,.^14,.^4"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_userdto,UserDTO>>
+|**401**|Unauthorized|No Content
+|**403**|Forbidden|No Content
+|**404**|Not Found|No Content
+|===
+
+
+===== Produces
+
+* `*/*`
+
+
+
+
+[[_definitions]]
+== Definitions
+
+[[_link]]
+=== Link
+
+[options="header", cols=".^3,.^4"]
+|===
+|Name|Schema
+|**href** +
+__optional__|string
+|**templated** +
+__optional__|boolean
+|===
+
+
+[[_53d375507d198e9157717964970e1987]]
+=== Map«string,Link»
+__Type__ : < string, <<_link,Link>> > map
+
+
+[[_modelandview]]
+=== ModelAndView
+
+[options="header", cols=".^3,.^4"]
+|===
+|Name|Schema
+|**empty** +
+__optional__|boolean
+|**model** +
+__optional__|object
+|**modelMap** +
+__optional__|< string, object > map
+|**reference** +
+__optional__|boolean
+|**status** +
+__optional__|enum (100 CONTINUE, 101 SWITCHING_PROTOCOLS, 102 PROCESSING, 103 CHECKPOINT, 200 OK, 201 CREATED, 202 ACCEPTED, 203 NON_AUTHORITATIVE_INFORMATION, 204 NO_CONTENT, 205 RESET_CONTENT, 206 PARTIAL_CONTENT, 207 MULTI_STATUS, 208 ALREADY_REPORTED, 226 IM_USED, 300 MULTIPLE_CHOICES, 301 MOVED_PERMANENTLY, 302 FOUND, 302 MOVED_TEMPORARILY, 303 SEE_OTHER, 304 NOT_MODIFIED, 305 USE_PROXY, 307 TEMPORARY_REDIRECT, 308 PERMANENT_REDIRECT, 400 BAD_REQUEST, 401 UNAUTHORIZED, 402 PAYMENT_REQUIRED, 403 FORBIDDEN, 404 NOT_FOUND, 405 METHOD_NOT_ALLOWED, 406 NOT_ACCEPTABLE, 407 PROXY_AUTHENTICATION_REQUIRED, 408 REQUEST_TIMEOUT, 409 CONFLICT, 410 GONE, 411 LENGTH_REQUIRED, 412 PRECONDITION_FAILED, 413 PAYLOAD_TOO_LARGE, 413 REQUEST_ENTITY_TOO_LARGE, 414 URI_TOO_LONG, 414 REQUEST_URI_TOO_LONG, 415 UNSUPPORTED_MEDIA_TYPE, 416 REQUESTED_RANGE_NOT_SATISFIABLE, 417 EXPECTATION_FAILED, 418 I_AM_A_TEAPOT, 419 INSUFFICIENT_SPACE_ON_RESOURCE, 420 METHOD_FAILURE, 421 DESTINATION_LOCKED, 422 UNPROCESSABLE_ENTITY, 423 LOCKED, 424 FAILED_DEPENDENCY, 425 TOO_EARLY, 426 UPGRADE_REQUIRED, 428 PRECONDITION_REQUIRED, 429 TOO_MANY_REQUESTS, 431 REQUEST_HEADER_FIELDS_TOO_LARGE, 451 UNAVAILABLE_FOR_LEGAL_REASONS, 500 INTERNAL_SERVER_ERROR, 501 NOT_IMPLEMENTED, 502 BAD_GATEWAY, 503 SERVICE_UNAVAILABLE, 504 GATEWAY_TIMEOUT, 505 HTTP_VERSION_NOT_SUPPORTED, 506 VARIANT_ALSO_NEGOTIATES, 507 INSUFFICIENT_STORAGE, 508 LOOP_DETECTED, 509 BANDWIDTH_LIMIT_EXCEEDED, 510 NOT_EXTENDED, 511 NETWORK_AUTHENTICATION_REQUIRED)
+|**view** +
+__optional__|<<_view,View>>
+|**viewName** +
+__optional__|string
+|===
+
+
+[[_responseresult]]
+=== ResponseResult
+
+[options="header", cols=".^3,.^4"]
+|===
+|Name|Schema
+|**code** +
+__optional__|integer (int32)
+|**data** +
+__optional__|object
+|**msg** +
+__optional__|string
+|===
+
+
+[[_serviceinstance]]
+=== ServiceInstance
+
+[options="header", cols=".^3,.^4"]
+|===
+|Name|Schema
+|**host** +
+__optional__|string
+|**instanceId** +
+__optional__|string
+|**metadata** +
+__optional__|< string, string > map
+|**port** +
+__optional__|integer (int32)
+|**scheme** +
+__optional__|string
+|**secure** +
+__optional__|boolean
+|**serviceId** +
+__optional__|string
+|**uri** +
+__optional__|<<_uri,URI>>
+|===
+
+
+[[_uri]]
+=== URI
+
+[options="header", cols=".^3,.^4"]
+|===
+|Name|Schema
+|**absolute** +
+__optional__|boolean
+|**authority** +
+__optional__|string
+|**fragment** +
+__optional__|string
+|**host** +
+__optional__|string
+|**opaque** +
+__optional__|boolean
+|**path** +
+__optional__|string
+|**port** +
+__optional__|integer (int32)
+|**query** +
+__optional__|string
+|**rawAuthority** +
+__optional__|string
+|**rawFragment** +
+__optional__|string
+|**rawPath** +
+__optional__|string
+|**rawQuery** +
+__optional__|string
+|**rawSchemeSpecificPart** +
+__optional__|string
+|**rawUserInfo** +
+__optional__|string
+|**scheme** +
+__optional__|string
+|**schemeSpecificPart** +
+__optional__|string
+|**userInfo** +
+__optional__|string
+|===
+
+
+[[_userdto]]
+=== UserDTO
+
+[options="header", cols=".^3,.^4"]
+|===
+|Name|Schema
+|**avatarUrl** +
+__optional__|string
+|**bonus** +
+__optional__|integer (int32)
+|**createTime** +
+__optional__|string (date-time)
+|**id** +
+__optional__|integer (int32)
+|**roles** +
+__optional__|string
+|**updateTime** +
+__optional__|string (date-time)
+|**wxId** +
+__optional__|string
+|**wxNickname** +
+__optional__|string
+|===
+
+
+[[_view]]
+=== View
+
+[options="header", cols=".^3,.^4"]
+|===
+|Name|Schema
+|**contentType** +
+__optional__|string
+|===
+
+
+[[_fa86f1a57d6f758a93cb33b59c015654]]
+=== 公告
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**content** +
+__optional__|公告内容|string
+|**createTime** +
+__optional__|创建时间|string (date-time)
+|**id** +
+__optional__|公告id|integer (int32)
+|**showFlag** +
+__optional__|是否显示 0：否 1：是|boolean
+|===
+
+
+[[_c31f48f84ef207e66a03c015a7243b43]]
+=== 分享
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**auditStatus** +
+__optional__|审核状态|string
+|**author** +
+__optional__|作者|string
+|**buyCount** +
+__optional__|购买数量|integer (int32)
+|**cover** +
+__optional__|封面图|string
+|**createTime** +
+__optional__|创建时间|string (date-time)
+|**downloadUrl** +
+__optional__|下载路劲|string
+|**id** +
+__optional__|分享id|integer (int32)
+|**isOriginal** +
+__optional__|分享内容标题|boolean
+|**price** +
+__optional__|价格|integer (int32)
+|**reason** +
+__optional__|审核不通过的原因|string
+|**showFlag** +
+__optional__|是否显示|boolean
+|**summary** +
+__optional__|摘要|string
+|**title** +
+__optional__|分享内容标题|string
+|**updateTime** +
+__optional__|更新时间|string (date-time)
+|**userId** +
+__optional__|分享人id|integer (int32)
+|===
+
+
+[[_b3aa729e321b5a0a8db2802fb0f94751]]
+=== 分享详情，带发布人昵称
+
+[options="header", cols=".^3,.^11,.^4"]
+|===
+|Name|Description|Schema
+|**share** +
+__optional__|发布人昵称|<<_c31f48f84ef207e66a03c015a7243b43,分享>>
+|**wxNickname** +
+__optional__|发布人昵称|string
+|===
+
+
+
+
+

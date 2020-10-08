@@ -15,5 +15,5 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 //@RibbonClient(name = "user-center", configuration = RibbonConfig.class)
 //@RibbonClients(defaultConfiguration = RibbonConfig.class)
-public class UserConfiguration {
+public class UserRibbonConfiguration {
 }
