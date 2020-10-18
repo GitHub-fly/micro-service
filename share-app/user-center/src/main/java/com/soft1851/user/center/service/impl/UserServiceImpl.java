@@ -12,6 +12,7 @@ import com.soft1851.user.center.service.UserService;
 import com.soft1851.user.center.util.DateUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,7 +35,6 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     private final UserMapper userMapper;
-
     private final BonusEventLogMapper bonusEventLogMapper;
 
     @Override
@@ -93,7 +93,7 @@ public class UserServiceImpl implements UserService {
         SignInRespDTO signInRespDTO = new SignInRespDTO();
         /* 判断用户今天日否签过到
            若为 1，表示已签到
-           若为 2，表示未签到，则进行签到操作
+           若为 0，表示未签到，则进行签到操作
          */
         if (checkSignIn(userId) == 1) {
             signInRespDTO.setMsg("您已签到！");

@@ -20,7 +20,7 @@ spring:
     sentinel:
       transport:
         # 指定 sentinel 控制台地址
-        dashboard: localhost:8080
+        dashboard: 123.56.91.23:8080
 
 
   datasource:
@@ -79,6 +79,7 @@ rocketmq:
   producer:
     # 必须指定group
     group: test-group
+    send-message-timeout: 15000
 
 # feign 配置日志
 feign:
