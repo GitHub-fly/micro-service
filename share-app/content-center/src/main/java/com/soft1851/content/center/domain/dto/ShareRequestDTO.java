@@ -23,6 +23,9 @@ import java.util.Date;
 @ApiModel("分享信息")
 public class ShareRequestDTO {
 
+    @ApiModelProperty(name = "userId",value = "投稿人id")
+    private Integer userId;
+
     @ApiModelProperty(name = "author", value = "作者")
     private String author;
 
@@ -40,4 +43,7 @@ public class ShareRequestDTO {
 
     @ApiModelProperty(name = "title", value = "标题")
     private String title;
+
+    @ApiModelProperty(name = "cover", value = "封面图")
+    private String cover;
 }

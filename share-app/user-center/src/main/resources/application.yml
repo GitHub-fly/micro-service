@@ -1,6 +1,13 @@
+server:
+  port: 0
+
 spring:
   application:
     name: user-center
+  zipkin:
+    base-url: http://123.56.91.23:9411
+    #    不被 nacos 发现
+    discovery-client-enabled: false
   cloud:
     nacos:
       discovery:
@@ -25,9 +32,6 @@ spring:
       connection-timeout: 30000
     type: com.zaxxer.hikari.HikariDataSource
 
-server:
-  port: 7001
-
 info:
   app:
     name: content-center
@@ -50,5 +54,10 @@ rocketmq:
   producer:
     # 必须指定group
     group: test-group
+
+jwt:
+  secret: aaaaaaabbbbbbcccccdddddaaaaaaabbbbbbcccccdddddaaaaaaabbbbbbcccccddddd
+  # 有效期，单位秒，默认2周
+  expire-time-in-second: 1209600
 
 

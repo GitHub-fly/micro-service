@@ -1,5 +1,6 @@
 package com.soft1851.content.center;
 
+import com.purgeteam.dispose.starter.Result;
 import com.purgeteam.dispose.starter.annotation.EnableGlobalDispose;
 import com.soft1851.content.center.configuration.GlobalFeignConfiguration;
 import org.springframework.boot.SpringApplication;
@@ -18,7 +19,7 @@ import tk.mybatis.spring.annotation.MapperScan;
  */
 @SpringBootApplication
 @MapperScan("com.soft1851.content.center.mapper")
-@EnableFeignClients //(defaultConfiguration = GlobalFeignConfiguration.class)
+@EnableFeignClients(defaultConfiguration = GlobalFeignConfiguration.class)
 @EnableGlobalDispose
 public class ContentCenterApplication {
 

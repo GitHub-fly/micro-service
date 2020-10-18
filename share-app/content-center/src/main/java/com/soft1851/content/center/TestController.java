@@ -2,7 +2,7 @@ package com.soft1851.content.center;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
-import com.soft1851.content.center.domain.dto.UserDTO;
+import com.soft1851.content.center.domain.entity.User;
 import com.soft1851.content.center.feignclient.TestFeignClient;
 import com.soft1851.content.center.feignclient.TestGitHubFeignClient;
 import com.soft1851.content.center.service.TestService;
@@ -73,8 +73,8 @@ public class TestController {
     @ApiOperation(value = "通过feign来调用方法", notes = "通过feign来调用方法")
     @GetMapping("/test-q")
 
-    public UserDTO getUser(UserDTO userDTO) {
-        return testFeignClient.getUser(userDTO);
+    public User getUser(User user) {
+        return testFeignClient.getUser(user);
     }
 
     private final TestGitHubFeignClient testGitHubFeignClient;

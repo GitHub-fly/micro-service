@@ -1,6 +1,6 @@
 package com.soft1851.content.center.feignclient;
 
-import com.soft1851.content.center.domain.dto.UserDTO;
+import com.soft1851.content.center.domain.entity.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.cloud.openfeign.SpringQueryMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,5 +16,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface TestFeignClient {
 
     @GetMapping("/users/q")
-    UserDTO getUser(@SpringQueryMap UserDTO userDTO);
+    User getUser(@SpringQueryMap User user);
+
+    @GetMapping("/users/hello")
+    User getData();
 }

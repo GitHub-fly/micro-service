@@ -18,14 +18,14 @@ import org.springframework.web.bind.annotation.RestController;
  * @Version 1.0
  **/
 @RestController
-@RequestMapping("/notice")
+@RequestMapping("/notices")
 @Api(tags = "公告接口", value = "提供公告相关的 Rest API")
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class NoticeController {
 
     private final NoticeService noticeService;
 
-    @GetMapping(value = "/one")
+    @GetMapping(value = "/latest")
     @ApiOperation(value = "查询最新一条公告", notes = "查询最新一条公告")
     public Notice getTopNotice() {
         return noticeService.getLatest();

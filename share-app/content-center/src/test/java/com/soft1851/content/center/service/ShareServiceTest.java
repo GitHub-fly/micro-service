@@ -2,7 +2,7 @@ package com.soft1851.content.center.service;
 
 import com.github.pagehelper.PageInfo;
 import com.soft1851.content.center.domain.AuditStatusEnum;
-import com.soft1851.content.center.domain.dto.AuditDTO;
+import com.soft1851.content.center.domain.dto.ShareAuditDTO;
 import com.soft1851.content.center.domain.dto.ShareRequestDTO;
 import com.soft1851.content.center.domain.entity.Share;
 import org.junit.jupiter.api.Test;
@@ -11,8 +11,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import javax.annotation.Resource;
 
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class ShareServiceTest {
@@ -60,10 +58,21 @@ class ShareServiceTest {
 
     @Test
     void checkShare() {
-        AuditDTO auditDTO = AuditDTO.builder()
+        ShareAuditDTO shareAuditDTO = ShareAuditDTO.builder()
                 .auditStatusEnum(AuditStatusEnum.PASS)
                 .reason("优秀！")
                 .build();
-        System.out.println(shareService.checkShare(auditDTO, 14));
+        System.out.println(shareService.checkShare(shareAuditDTO, 14));
+    }
+
+    @Test
+    void testFindById() {
+        System.out.println(shareService.findById(1));
+    }
+
+    @Test
+    void myExchange() {
+        PageInfo<Share> sharePageInfo = shareService.myExchange(1, 10, 23);
+        sharePageInfo.getList().forEach(System.out::println);
     }
 }

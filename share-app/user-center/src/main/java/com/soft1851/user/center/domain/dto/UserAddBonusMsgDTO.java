@@ -1,5 +1,6 @@
 package com.soft1851.user.center.domain.dto;
 
+import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,7 +10,7 @@ import javax.persistence.Table;
 
 /**
  * @author xunmi
- * @ClassName UserAddBonusMsgDto
+ * @ClassName UserAddBonusMsgDTO
  * @Description TODO
  * @Date 2020/10/8
  * @Version 1.0
@@ -18,10 +19,24 @@ import javax.persistence.Table;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "用户增加积分DTO")
-public class UserAddBonusMsgDto {
-
+@ApiModel("用户增加积分信息DTO")
+public class UserAddBonusMsgDTO {
+    /**
+     * 为谁加积分
+     */
     private Integer userId;
-
+    /**
+     * 加多少积分
+     */
     private Integer bonus;
+
+    /**
+     * 描述
+     */
+    private String description;
+
+    /**
+     * 事件
+     */
+    private String event;
 }

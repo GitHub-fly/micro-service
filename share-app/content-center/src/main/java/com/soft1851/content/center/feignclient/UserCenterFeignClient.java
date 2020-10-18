@@ -1,8 +1,8 @@
 package com.soft1851.content.center.feignclient;
 
-import com.soft1851.content.center.configuration.UserFeignConfiguration;
-import com.soft1851.content.center.domain.dto.UserAddBonusMsgDto;
-import com.soft1851.content.center.domain.dto.UserDTO;
+import com.purgeteam.dispose.starter.Result;
+import com.soft1851.content.center.domain.dto.UserAddBonusMsgDTO;
+import com.soft1851.content.center.domain.entity.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,10 +22,10 @@ public interface UserCenterFeignClient {
      * http://user-center/users/{id}
      *
      * @param id
-     * @return UserDTO
+     * @return User
      */
     @GetMapping("/users/{id}")
-    UserDTO findUserById(@PathVariable Integer id);
+    Result<User> findUserById(@PathVariable(value = "id") Integer id);
 
     /**
      * hello测试
@@ -39,8 +39,9 @@ public interface UserCenterFeignClient {
      * 用户增加积分方法
      *
      * @param userAddBonusMsgDto
+     * @return
      */
-    @PostMapping("/users/bonus")
-    void handleBonus(@RequestBody UserAddBonusMsgDto userAddBonusMsgDto);
+    @PostMapping("/users/add-bonus")
+    User handleBonus(@RequestBody UserAddBonusMsgDTO userAddBonusMsgDto);
 
 }

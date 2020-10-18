@@ -1,6 +1,6 @@
 package com.soft1851.user.center.listener;
 
-import com.soft1851.user.center.domain.dto.UserAddBonusMsgDto;
+import com.soft1851.user.center.domain.dto.UserAddBonusMsgDTO;
 import com.soft1851.user.center.domain.entity.BonusEventLog;
 import com.soft1851.user.center.domain.entity.User;
 import com.soft1851.user.center.mapper.BonusEventLogMapper;
@@ -23,12 +23,12 @@ import java.util.Date;
 @Service
 @RocketMQMessageListener(consumerGroup = "consumer", topic = "add-bonus")
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-public class AddBonusListener implements RocketMQListener<UserAddBonusMsgDto> {
+public class AddBonusListener implements RocketMQListener<UserAddBonusMsgDTO> {
     private final UserMapper userMapper;
     private final BonusEventLogMapper bonusEventLogMapper;
 
     @Override
-    public void onMessage(UserAddBonusMsgDto userAddBonusMsgDto) {
+    public void onMessage(UserAddBonusMsgDTO userAddBonusMsgDto) {
         // 1. 为用户加积分
         Integer userId = userAddBonusMsgDto.getUserId();
         Integer bonus = userAddBonusMsgDto.getBonus();

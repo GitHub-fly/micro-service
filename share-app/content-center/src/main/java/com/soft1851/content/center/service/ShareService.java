@@ -1,7 +1,8 @@
 package com.soft1851.content.center.service;
 
 import com.github.pagehelper.PageInfo;
-import com.soft1851.content.center.domain.dto.AuditDTO;
+import com.soft1851.content.center.domain.dto.ExchangeDTO;
+import com.soft1851.content.center.domain.dto.ShareAuditDTO;
 import com.soft1851.content.center.domain.dto.ShareDTO;
 import com.soft1851.content.center.domain.dto.ShareRequestDTO;
 import com.soft1851.content.center.domain.entity.Share;
@@ -16,6 +17,7 @@ import java.util.List;
  * @Version 1.0
  **/
 public interface ShareService {
+
     /**
      * 获得分享详情
      *
@@ -74,7 +76,7 @@ public interface ShareService {
      * @param shareId
      * @return
      */
-    AuditDTO checkShare(AuditDTO auditDTO, Integer shareId);
+    Share checkShare(ShareAuditDTO auditDTO, Integer shareId);
 
 
     /**
@@ -84,7 +86,40 @@ public interface ShareService {
      * @param shareId
      * @return
      */
-    AuditDTO checkShareRocketMQ(AuditDTO auditDTO, Integer shareId);
+    ShareAuditDTO checkShareRocketMQ(ShareAuditDTO auditDTO, Integer shareId);
 
+    /**
+     * 兑换
+     *
+     * @param exchangeDTO
+     * @return
+     */
+    Share exchange(ExchangeDTO exchangeDTO);
 
+    /**
+     * 我的兑换记录
+     *
+     * @param pageNo
+     * @param pageSize
+     * @param userId
+     * @return
+     */
+    PageInfo<Share> myExchange(Integer pageNo, Integer pageSize, Integer userId);
+
+    /**
+     * 我的投稿记录
+     *
+     * @param pageNo
+     * @param pageSize
+     * @param userId
+     * @return
+     */
+    PageInfo<Share> myContribute(Integer pageNo, Integer pageSize, Integer userId);
+
+    /**
+     * 查询未审核分享数据
+     *
+     * @return
+     */
+    List<Share> querySharesNotYet();
 }

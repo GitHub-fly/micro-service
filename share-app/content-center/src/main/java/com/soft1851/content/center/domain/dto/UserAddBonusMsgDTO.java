@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 /**
  * @author xunmi
- * @ClassName UserAddBonusMsgDto
+ * @ClassName UserAddBonusMsgDTO
  * @Description TODO
  * @Date 2020/10/8
  * @Version 1.0
@@ -21,7 +21,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @AllArgsConstructor
 @ApiModel("用户积分DTO")
-public class UserAddBonusMsgDto {
+public class UserAddBonusMsgDTO {
 
     @ApiModelProperty(name = "userId", value = "用户id")
     private Integer userId;
